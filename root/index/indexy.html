@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title id = "title">Заголовок</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
   </head>
   <body>
-    <ol>
+    <header>
+      <img id = "image_site" src="image.png" />
+      <div id = "name_site">Лучший сайт мира!!!</div>
+    </header>
+    <div id = "menu">
+      <ul>
+        <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
+        <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
+        <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
+      </ul>
+    </div>
+    <br />
+    <nav>
+    <ol class = "link">
       <li><a href="http://example.com/" id = "anchor">Гиперссылка на главную страницу сайта example.com</a></li>
       <li><a href="https://example.com/">Гиперссылка на главную страницу сайта example.com в протоколе https </a></li>
       <li><a href="ftp://user:password@example.com/myfile.zip">ссылка на ftp без авторизации</a></li>
@@ -14,7 +28,7 @@
         Ссылка на часть другой страницы</a></li>
       <li><a href="#anchor">Ссылка на часть этой страницы</a></li>
       <li><a href="https://www.youtube.com/watch?v=CmJDxSbCscM&a">Гиперссылка с двумя параметрами в URL</a></li>
-      <li><a>Список ссылок основной навигации сайта
+      <li>Список ссылок основной навигации сайта
         <ul>
         <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
         <li>Ещё не сущ. страница</li>
@@ -44,9 +58,41 @@
       <li><a href="indexy.html">Сокращенная ссылка на главную </a></li>
       <li><a href="demo.html">Сокращенная ссылка на внутреннюю</a></li>
     </ol>
-    <form action="\"
-      method="POST">
+    </nav>
+    <br />
+<table>
+  <tr>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+  </tr>
+  <tr>
+    <td>A1</td>
+    <td>B1</td>
+    <td>C1</td>
+  </tr>
+  <tr>
+    <td colspan="3">A2+B2+C2</td>
+  </tr>
+  <tr>
+    <td>A3</td>
+    <td>B3</td>
+    <td>C3</td>
+  </tr>
+  <tr>
+    <td>A4</td>
+    <td>B4</td>
+    <td>C4</td>
+  </tr>
+  <tr>
+    <td>A5</td>
+    <td>B5</td>
+    <td>C5</td>
+  </tr>
 
+</table>
+<div id="form">
+    <form action="\" method="POST">
       <label>
         Имя:<br />
         <input name="field-name-1"/>
@@ -108,7 +154,14 @@
         name="check-1" />
         Да</label><br />
 
-      <input type="submit" value="Отправить" />
+      <input type="submit" value="Отправить" /><br />
     </form>
+</div>
+
+    <footer>
+      <div id="footer_text">
+        Это обычный футер
+      </div>
+    </footer>
   </body>
 </html>

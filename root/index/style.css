@@ -1,8 +1,12 @@
 body{
 margin:0;
+display: flex;
+flex-direction: column;
 }
 header{
-  width:100%; background-color:#ccc; padding: 10px; height:120px;
+   background-color:#ccc; padding: 10px;
+  flex: 1;
+  order: 1;
 }
 footer{
   width: 100%; height: 120px; background-color:#ccc;
@@ -14,40 +18,30 @@ footer{
   float:left; margin-left: auto; margin-right: auto; width:100px; height:100px;
 }
 #menu{
-        margin: 0 auto;
+  flex: 1;
+  order: 2;
+        width:100%;
+        margin: 10px;
         padding: 10px;
-        margin-top: 20px;
-        list-style-type: none;
-        border: 2px solid #0066FF;
-        border-radius: 20px 5px;
-        max-width: 960px;
-        text-align: center;
+        text-align: left;
         background-color: #33ADFF;
       }
-      #menu li { display: inline; }
-      #menu a {
-        color: #fff;
-        padding: 5px 10px;
-        text-decoration: none;
-        font-weight: bold;
-        display: inline-block;
-        width: 30%;
-        vertical-align:top;
-      }
-      #menu a:hover {
-        border-radius: 20px 5px;
-        background-color: #0066FF;
-      }
-
 
 nav {
-        max-width: 960px;
-        margin: 0 auto;
-        text-align: left;
+  flex:3;
+  order:3;
+  width:100%;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
 }
 table{
-  max-width: 960px;
-  margin: 0 auto;
+  flex:2;
+  order:3;
+  width:100%;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
   border-collapse: collapse;
   border: 3px solid grey;
 }
@@ -55,14 +49,27 @@ th, td {
    border: 1px solid grey;
 }
 #form{
-  max-width: 960px;
-  margin: 0 auto;
+  flex: 5;
+  order:5;
+  width:100%;
+  margin: 10px;
+  padding: 10px;
   text-align: left;
 }
 footer{
-  width:100%; background-color:#ccc; padding: 10px; max-height:120px;
+  flex:1;
+  order:6;
+  width:100%;
+  margin: 10px;
+  padding: 10px;
+  background-color:#ccc; padding: 10px; max-height:120px;
   text-align: center;
 }
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
+}
+@media screen and (min-width: 800px) {
+  body{
+    flex-direction: row;
+  }
 }

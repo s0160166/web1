@@ -1,50 +1,73 @@
+* {
+	box-sizing:  border-box;
+}
 body{
 margin:0;
-display: flex;
-flex-direction: row;
 }
-header{
-  width:100%;
-  background-color:#ccc; padding: 10px;
-  flex: 1;
-  order: 1;
+#xyu{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:  wrap;
+  width: 100%;
+  margin: 10px 0;
+  border: 3px solid black;
+  background-color: #cad;
 }
-footer{
-  width: 100%; height: 120px; background-color:#ccc;
+#header_box {
+
+	background-color: #87FA9C;
+  border:  1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  padding: 10px;
 }
-#name_site{
+#siteName{
    background-color:#ddd; padding:10px; text-align: center;
+   flex: 5;
+   order:2;
+   margin: 10px;
 }
-#image_site{
-  float:left; margin-left: auto; margin-right: auto; width:100px; height:100px;
+#logo{
+  float:left; margin: 10px; width:100px; height:100px;
+  flex: 1;
+  order:1;
+  padding: 10px;
+  max-height: 100px;
+  max-width: 100px;
 }
 #menu{
-  flex: 1;
-  order: 2;
-        width:100%;
-        margin: 10px;
-        padding: 10px;
-        text-align: left;
-        background-color: #33ADFF;
-      }
+  background-color:#cca;
+  flex: 100%;
+  order:1;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  border: 3px solid grey;
+}
 
-nav {
-  flex:3;
-  order:3;
-  width:100%;
+#xyu nav{
+  flex:100%;
+  order:2;
   margin: 10px;
   padding: 10px;
   text-align: left;
   background-color:#ccc;
+  border: 3px solid grey;
+}
+#table_conteiner{
+  background-color:#ccc;
+  flex:100%;
+  order:4;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  border-collapse: collapse;
+  border: 3px solid grey;
 }
 table{
-  background-color:#ccc;
-  flex:2;
-  order:5;
-  width:100%;
-  margin: 10px;
-  padding: 10px;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   border-collapse: collapse;
   border: 3px solid grey;
 }
@@ -53,33 +76,33 @@ th, td {
 }
 #form{
   background-color:#ccc;
-  flex: 5;
-  order:4;
-  width:100%;
+  flex: 100%;
+  order:3;
   margin: 10px;
   padding: 10px;
   text-align: left;
+  border: 3px solid grey;
 }
 footer{
-  flex:1;
-  order:6;
-  width:100%;
-  margin: 10px;
-  padding: 10px;
-  background-color:#ccc; padding: 10px; max-height:120px;
-  text-align: center;
+  width:  100%;
+	margin-top:  20px;
+	padding:  10px 0 10px 0;
+	text-align: center;
+	background-color: #87FA9C;
+  border:  1px solid black;
 }
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
 }
-@media screen and (min-width: 800px) {
-  body{
-    flex-direction: column;
+@media screen and (min-width: 960px) {
+  #xyu{
+    flex-direction: row;
+    flex-wrap:  wrap;
   }
   #form{
-    order: 5;
-  }
-  #table{
     order: 4;
+  }
+  #table_conteiner{
+    order: 3;
   }
 }

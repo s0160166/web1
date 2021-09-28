@@ -1,6 +1,3 @@
-* {
-	box-sizing:  border-box;
-}
 body{
 margin:0;
 }
@@ -44,7 +41,6 @@ margin:0;
   text-align: left;
   border: 3px solid grey;
 }
-
 #xyu nav{
   flex:100%;
   order:2;
@@ -93,7 +89,7 @@ footer{
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
 }
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
   #xyu{
     flex-direction: row;
 		flex-wrap:  wrap;

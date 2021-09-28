@@ -93,7 +93,7 @@ footer{
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
   #xyu{
     flex-direction: row;
 		flex-wrap:  wrap;

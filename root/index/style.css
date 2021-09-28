@@ -45,7 +45,7 @@ margin:0;
   flex:100%;
   order:2;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   text-align: left;
   background-color:#ccc;
   border: 3px solid grey;
@@ -89,7 +89,7 @@ footer{
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
 }
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 800px) {
   #xyu{
     flex-direction: row;
 		flex-wrap:  wrap;

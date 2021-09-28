@@ -14,7 +14,6 @@ margin:0;
   background-color: #cad;
 }
 #header_box {
-
 	background-color: #87FA9C;
   border:  1px solid black;
   display: flex;
@@ -24,13 +23,13 @@ margin:0;
 }
 #siteName{
    background-color:#ddd; padding:10px; text-align: center;
-   flex: 5;
+   flex: 80%;
    order:2;
    margin: 10px;
 }
 #logo{
-  float:left; margin: 10px; width:100px; height:100px;
-  flex: 1;
+  float:left; margin: 10px;
+  flex: 20%;
   order:1;
   padding: 10px;
   max-height: 100px;
@@ -93,15 +92,4 @@ footer{
 }
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
-}
-@media screen and (min-width: 800px) {
-  #xyu{
-    flex-direction: row;
-  }
-  #form{
-    order: 4;
-  }
-  #table_conteiner{
-    order: 3;
-  }
 }

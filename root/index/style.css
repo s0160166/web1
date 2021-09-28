@@ -93,3 +93,14 @@ footer{
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
 }
+@media screen and (min-width: 800px) {
+  #xyu{
+    flex-direction: row;
+  }
+  #form{
+    order: 4;
+  }
+  #table_conteiner{
+    order: 3;
+  }
+}

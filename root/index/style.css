@@ -96,6 +96,7 @@ footer{
 @media screen and (min-width: 800px) {
   #xyu{
     flex-direction: row;
+		flex-wrap:  wrap;
   }
   #form{
     order: 4;

@@ -12,9 +12,9 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-  <div id="container-fluid">
+  <div class="container-fluid">
     <div class="row d-flex mx-sm-m3">
-      <div class = "col-md-12 px-sm-3">
+      <div class = "col-md-12 order-1 px-sm-3">
         <div class="h-100 py-3">
   <header>
 		<div id="header_box">
@@ -26,7 +26,8 @@
 		</div>
 	</header>
       </div>
-    <div class = "col-md-12 px-sm-3">
+      </div>
+    <div class = "col-md-12 order-2 px-sm-3">
       <div class="h-100 py-3">
       <div id = "menu">
        <ul>
@@ -34,10 +35,10 @@
         <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
         <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
        </ul>
-        </div>
+      </div>
       </div>
     </div>
-    <div class = "col-md-6 px-sm-3">
+    <div class = "col-md-12 order-3 px-sm-3">
       <div class="h-100 py-3">
     <nav>
     <ol class = "link">
@@ -82,7 +83,7 @@
     </nav>
       </div>
     </div>
-<div class = "col-md-3 px-sm-3">
+<div class = "col-md-12 order-4 px-sm-3">
   <div class="h-100 py-3">
 <div id="table_conteiner">
   <table>
@@ -119,7 +120,7 @@
   </div>
 </div>
 </div>
-<div class = "col-md-3 px-sm-3">
+<div class = "col-md-12 order-5 px-sm-3">
   <div class="h-100 py-3">
  <div id="form">
     <form action="\" method="POST">
@@ -189,9 +190,8 @@
     </div>
 </div>
 </div>
-</div>
-</div>
-<div class = "col-md-12 px-sm-3">
+
+<div class = "col-md-12 order-6 px-sm-3">
   <div class="h-100 py-3">
     <footer>
       <div id="footer_text">
@@ -200,5 +200,7 @@
     </footer>
   </div>
   </div>
+</div>
+</div>
   </body>
 </html>

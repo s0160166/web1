@@ -21,21 +21,28 @@
   max-width: 100px;
 }
 #menu{
+  padding: 10px;
   background-color:#cca;
   text-align: left;
   border: 3px solid grey;
   height: 100%;
 }
 nav{
-  text-align: left;
+  padding: 10px;
+  column-width: 49%;
+	column-count: 2;
+	column-gap: 2%;
+	background: #fff2e1;
   background-color:#ccc;
   border: 3px solid grey;
+  max-height: 100%;
 }
 #table_conteiner{
   background-color:#ccc;
   text-align: left;
   border-collapse: collapse;
   border: 3px solid grey;
+  height: 100%;
 }
 table{
   width: 100%;
@@ -47,6 +54,7 @@ th, td {
    border: 1px solid grey;
 }
 #form{
+  padding: 10px;
   background-color:#ccc;
   text-align: center;
   border: 3px solid grey;

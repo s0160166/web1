@@ -3,58 +3,211 @@
 <html>
 
   <head>
-    <title>Bootstrap</title>
-
+    <meta charset="utf-8">
+    <title id = "title">Заголовок</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <style>
-html {
-  font-size: 10px;
-}
-body {
-  font-size: 12pt;
-  padding: 10px;
-}
-main, aside {
-  background-color: #ddd;
-  padding: 10px;
-  font-family: serif;
-  height: 100%;
-}
-h1 {
-  margin-top: 15px;
-  font-size: 2em;
-  font-weight: bold;
-}
-   </style>
   </head>
 
 
   <body>
     <div class="container-fluid">
       <div class="row d-flex mx-sm-m3">
-        <div class="col-md-9 order-2 px-sm-3">
+        <div class="col-md-12 order-1 px-sm-3">
           <div class="h-100 py-3">
-          <main>
-            <h1>Главный контент</h1>
-            <p>Вторая строка</p>
-          </main>
+            <header>
+                <div id="header_box">
+                  <img id="logo" src="image.png" alt="picture">
+                  <div id="siteName">
+                    <h3>В эпоху до аватаров мы были магами не элементов, а энергии внутри нас самих</h3>
+                  </div>
+                </div>
+            </header>
           </div>
         </div>
-        <div class="col-md-3 order-1 px-sm-3">
+      </div>
+      <div class="row d-flex mx-sm-m3">
+        <div class="col-md-4 order-1 px-sm-3">
           <div class="h-100 py-3">
-          <aside>
-          Сайдбар
-          </aside>
+            <div id = "menu">
+                    <ul>
+                     <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
+                     <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
+                     <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
+                    </ul>
+                   </div>
+          </div>
+        </div>
+        <div class="col-md-8 order-2 px-sm-3">
+          <div class="h-100 py-3">
+            <nav>
+                  <ol class = "link">
+                  <li><a href="http://example.com/" id = "anchor">Гиперссылка на главную страницу сайта example.com</a></li>
+                  <li><a href="https://example.com/">Гиперссылка на главную страницу сайта example.com в протоколе https </a></li>
+                  <li><a href="ftp://user:password@example.com/myfile.zip">ссылка на ftp без авторизации</a></li>
+                  <li><a href="ftp://example.com/myfile.zip">ссылка на ftp с авторизацией</a></li>
+                  <li><a href="https://lavnik.net/kak-sozdat-ssylku-na-konkretnuyu-chast-stranitsy#lavnik-248755525">
+                    Ссылка на часть другой страницы</a></li>
+                  <li><a href="#anchor">Ссылка на часть этой страницы</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=CmJDxSbCscM&a">Гиперссылка с двумя параметрами в URL</a></li>
+                  <li>Список ссылок основной навигации сайта
+                    <ul>
+                    <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
+                    <li>Ещё не сущ. страница</li>
+                    <li>Ещё не сущ. страница</li>
+                  </ul></li>
+                  <li><a title="Тут ничего нет....">Ссылка без href</a></li>
+                  <li><a href="">Ссылка с пустым href</a></li>
+                  <li><a href = "http://example.com/" rel="nofollow">Ссылка по которой нельзя перейти поисковикам</a></li>
+                  <li><a href = "http://example.com/"><noindex>Ссылка, запрещенная для индексации поисковиками</noindex></a></li>
+                  <li><p>
+                    Внутри этого абзаца есть контекстная <a href="http://example.com/">ссылка</a>
+                  </p></li>
+                  <li>Ссылка - изображение <br /><a href = "http://example.com/">
+                    <img src="image.jpg" alt="Цветок" style="width: 300px;" />
+                  </a></li>
+                  <map name="primary">
+                  <area shape="circle" coords="150,100,50" href="http://example.com/">
+                  <area shape="rect" coords="1,1,50,50" href="https://www.youtube.com/watch?v=CmJDxSbCscM">
+                  </map>
+                  <li>Левый верхний угол - квадрат, цетр цветка - круг<br />
+                    <img usemap="#primary" src="image.jpg" alt="Цветок" style="width: 300px;" />
+                  </li>
+                  <li><a href="demo.html">Относительная в этом каталоге</a></li>
+                  <li><a href="../about/testfile.html">Относительная на страницу в каталоге about </a></li>
+                  <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
+                  <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
+                  <li><a href="indexy.html">Сокращенная ссылка на главную </a></li>
+                  <li><a href="demo.html">Сокращенная ссылка на внутреннюю</a></li>
+                  </ol>
+              </nav>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex mx-sm-m3">
+        <div class="col-md-6 order-1 px-sm-3">
+          <div class="h-100 py-3">
+            <div id="table_conteiner">
+                <table>
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+              </tr>
+              <tr>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+              </tr>
+              <tr>
+                <td colspan="3">A2+B2+C2</td>
+              </tr>
+              <tr>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+              </tr>
+              <tr>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+              </tr>
+              <tr>
+                <td>A5</td>
+                <td>B5</td>
+                <td>C5</td>
+              </tr>
+              </table>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 order-2 px-sm-3">
+          <div class="h-100 py-3">
+            <div id="form">
+                <form action="\" method="POST">
+                  <label>
+                    Имя:<br />
+                    <input name="field-name-1"/>
+                  </label><br />
+
+                  <label>
+                    Email:<br />
+                    <input name="field-email" type="email" />
+                  </label><br />
+
+                  <label>
+                    Дата рождения:<br />
+                    <input name="field-date"
+                      type="date" />
+                  </label><br />
+
+                  <label>
+
+                  Пол:<br />
+                  <label><input type="radio" checked="checked"
+                    name="radio-group-1" value="Значение1" />
+                    Мужской</label>
+                  <label><input type="radio"
+                    name="radio-group-1" value="Значение2" />
+                    Женский</label><br />
+
+                    Количество конечностей:<br />
+                    <label><input type="radio"
+                      name="radio-group-2" value="Значение1" />
+                      0</label>
+                    <label><input type="radio"
+                      name="radio-group-2" value="Значение2" />
+                      0-4</label>
+                      <label><input type="radio"
+                        name="radio-group-2" value="Значение3" />
+                        4-10</label>
+                        <label><input type="radio"
+                          name="radio-group-2" value="Значение" />
+                          10+</label><br />
+
+                          <label>
+                            Суперспособности:
+                            <br />
+                            <select name="field-name-2"
+                              multiple="multiple">
+                              <option value="Значение1">Бессмертие</option>
+                              <option value="Значение2">Прохождение сквозь стены</option>
+                              <option value="Значение3">Левитация</option>
+                            </select>
+                          </label><br />
+
+                          <label>
+                            Биография:<br />
+                            <textarea name="field-name-2"></textarea>
+                          </label><br />
+
+                  С контрактом ознакомлен:<br />
+                  <label><input type="checkbox" checked="checked"
+                    name="check-1" />
+                    Да</label><br />
+
+                  <input type="submit" value="Отправить" /><br />
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex mx-sm-m3">
+        <div class="col-md-12 order-6 px-sm-3">
+          <div class="h-100 py-3">
+            <footer>
+                  <div id="footer_text">
+                    <h6>Это обычный футер</h6>
+                  </div>
+            </footer>
           </div>
         </div>
       </div>
     </div>
   </body>
-
-</html> 
+</html>

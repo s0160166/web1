@@ -1,6 +1,3 @@
-body{
-margin:0;
-}
 #header_box {
 	background-color: #87FA9C;
   border:  3px solid black;
@@ -19,7 +16,7 @@ margin:0;
   border:  1px solid grey;
   float:left; margin: 10px;
   flex: 20%;
-  order:1;s
+  order:1;
   max-height: 100px;
   max-width: 100px;
 }
@@ -27,7 +24,7 @@ margin:0;
   background-color:#cca;
   text-align: left;
   border: 3px solid grey;
-
+  height: 100%;
 }
 nav{
   text-align: left;
@@ -55,6 +52,7 @@ th, td {
   border: 3px solid grey;
 }
 footer{
+  height: 100%;
 	padding:  10px;
 	text-align: center;
 	background-color: #87FA9C;

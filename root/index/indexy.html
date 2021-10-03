@@ -4,25 +4,41 @@
     <meta charset="utf-8">
     <title id = "title">Заголовок</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+  <div id="container-fluid">
+    <div class="row d-flex mx-sm-m3">
+      <div class = "col-md-12 px-sm-3">
+        <div class="h-100 py-3">
   <header>
 		<div id="header_box">
 			<img id="logo" src="image.png" alt="picture">
 			<div id="siteName">
-				<h1>В эпоху до аватаров мы были магами не элементов, а энергии внутри нас самих</h1>
+				<h3>В эпоху до аватаров мы были магами не элементов, а энергии внутри нас самих</h3>
+        </div>
 			</div>
 		</div>
 	</header>
-<div id="xyu">
-    <div id = "menu">
-      <ul>
+      </div>
+    <div class = "col-md-12 px-sm-3">
+      <div class="h-100 py-3">
+      <div id = "menu">
+       <ul>
         <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
         <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
         <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
-      </ul>
+       </ul>
+        </div>
+      </div>
     </div>
+    <div class = "col-md-6 px-sm-3">
+      <div class="h-100 py-3">
     <nav>
     <ol class = "link">
       <li><a href="http://example.com/" id = "anchor">Гиперссылка на главную страницу сайта example.com</a></li>
@@ -64,7 +80,10 @@
       <li><a href="demo.html">Сокращенная ссылка на внутреннюю</a></li>
     </ol>
     </nav>
-    <br />
+      </div>
+    </div>
+<div class = "col-md-3 px-sm-3">
+  <div class="h-100 py-3">
 <div id="table_conteiner">
   <table>
   <tr>
@@ -97,7 +116,11 @@
   </tr>
 
   </table>
+  </div>
 </div>
+</div>
+<div class = "col-md-3 px-sm-3">
+  <div class="h-100 py-3">
  <div id="form">
     <form action="\" method="POST">
       <label>
@@ -163,13 +186,19 @@
 
       <input type="submit" value="Отправить" /><br />
     </form>
+    </div>
 </div>
 </div>
-
+</div>
+</div>
+<div class = "col-md-12 px-sm-3">
+  <div class="h-100 py-3">
     <footer>
       <div id="footer_text">
-        Это обычный футер
+        <h6>Это обычный футер</h6>
       </div>
     </footer>
+  </div>
+  </div>
   </body>
 </html>

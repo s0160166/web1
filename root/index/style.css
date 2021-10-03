@@ -1,103 +1,70 @@
 body{
 margin:0;
 }
-#xyu{
-  display: flex;
-  flex-direction: column;
-  flex-wrap:  wrap;
-  width: 100%;
-  margin: 10px 0;
-  border: 3px solid black;
-  background-color: #cad;
-}
 #header_box {
 	background-color: #87FA9C;
-  border:  1px solid black;
+  border:  3px solid black;
   display: flex;
   flex-direction: row;
   flex-wrap:  wrap;
-  padding: 10px;
 }
 #siteName{
    background-color:#ddd; padding:10px; text-align: center;
    flex: 80%;
    order:2;
    margin: 10px;
+   border:  1px solid grey;
 }
 #logo{
+  border:  1px solid grey;
   float:left; margin: 10px;
   flex: 20%;
-  order:1;
-  padding: 10px;
+  order:1;s
   max-height: 100px;
   max-width: 100px;
 }
 #menu{
   background-color:#cca;
-  flex: 100%;
-  order:1;
-  margin: 10px;
-  padding: 10px;
   text-align: left;
   border: 3px solid grey;
 }
-#xyu nav{
-  flex:100%;
-  order:2;
-  margin: 10px;
-  padding: 30px;
+nav{
   text-align: left;
   background-color:#ccc;
   border: 3px solid grey;
 }
 #table_conteiner{
   background-color:#ccc;
-  flex:100%;
-  order:4;
-  margin: 10px;
-  padding: 10px;
   text-align: left;
   border-collapse: collapse;
   border: 3px solid grey;
+  height: 100%;
 }
 table{
   width: 100%;
+  height: 100%;
   text-align: center;
   border-collapse: collapse;
-  border: 3px solid grey;
 }
 th, td {
    border: 1px solid grey;
 }
 #form{
   background-color:#ccc;
-  flex: 100%;
-  order:3;
-  margin: 10px;
-  padding: 10px;
-  text-align: left;
+  text-align: center;
   border: 3px solid grey;
+  height: 100%;
 }
 footer{
-  width:  100%;
-	margin-top:  20px;
-	padding:  10px 0 10px 0;
+	padding:  10px;
 	text-align: center;
 	background-color: #87FA9C;
-  border:  1px solid black;
+  border:  3px solid black;
 }
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
+   border:  1px solid grey;
 }
 @media screen and (min-width: 800px) {
-  #xyu{
-    flex-direction: row;
-		flex-wrap:  wrap;
-  }
-  #form{
-    order: 4;
-  }
-  #table_conteiner{
-    order: 3;
-  }
+
 }

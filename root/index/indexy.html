@@ -70,14 +70,14 @@
                     Внутри этого абзаца есть контекстная <a href="http://example.com/">ссылка</a>
                   </p></li>
                   <li>Ссылка - изображение <br /><a href = "http://example.com/">
-                    <img src="image.jpg" alt="Цветок" style="width: 300px;" />
+                    <img src="image.jpg" alt="Цветок" style="width: 100%;" />
                   </a></li>
                   <map name="primary">
                   <area shape="circle" coords="150,100,50" href="http://example.com/">
                   <area shape="rect" coords="1,1,50,50" href="https://www.youtube.com/watch?v=CmJDxSbCscM">
                   </map>
                   <li>Левый верхний угол - квадрат, цетр цветка - круг<br />
-                    <img usemap="#primary" src="image.jpg" alt="Цветок" style="width: 300px;" />
+                    <img usemap="#primary" src="image.jpg" alt="Цветок" style="width: 100%;" />
                   </li>
                   <li><a href="demo.html">Относительная в этом каталоге</a></li>
                   <li><a href="../about/testfile.html">Относительная на страницу в каталоге about </a></li>
@@ -133,12 +133,12 @@
               <div class="form-group">
                    <label for="username" style="color: black;">Имя:</label>
                    <input type="text" class="form-control w-75 shadow bg-white rounded" name="firstname" id="firstname" placeholder="Enter Username">
-                   <small class="form-text text-muted">Введите ваше имя</small>
+                   <small class="form-text text-muted" style="text-align:left;">Введите ваше имя</small>
                    </div>
                    <div class="form-group">
                    <label for="email" style="color: black;">E-mail:</label>
                    <input type="email" class="form-control w-75 shadow bg-white rounded" id="email" name="email" placeholder="Enter E-mail:" >
-                   <small class="form-text text-muted">Введите один из следующих email: mail.ru,.com,.yandex</small>
+                   <small class="form-text text-muted"  style="text-align:left;">Введите один из следующих email: mail.ru,.com,.yandex</small>
                    </div>
                    <div class="form-group">
                    <label for="date" style="color: black;">Дата рождения:</label>

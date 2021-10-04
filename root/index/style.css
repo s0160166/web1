@@ -1,3 +1,6 @@
+body{
+	margin: 0;
+}
 #header_box {
 	background-color: #87FA9C;
   border:  3px solid black;
@@ -82,7 +85,7 @@ footer{
 	border:  1px solid yellow;
 	text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 	nav{
 	  padding: 10px;
 		column-count: 1;

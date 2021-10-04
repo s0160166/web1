@@ -18,7 +18,7 @@
   <body>
     <div class="container-fluid">
       <div class="row d-flex mx-sm-m3">
-        <div class="col-md-12 order-1 px-sm-3">
+        <div class="col-xs-12 col-md-12 order-1 px-sm-3">
           <div class="h-100 py-3">
             <header>
                 <div id="header_box">
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="row d-flex mx-sm-m3">
-        <div class="col-md-4 order-1 px-sm-3">
+        <div class="col-xs-12 col-md-4 order-1 px-sm-3">
           <div class="h-100 py-3">
             <div id = "menu">
                     <ul>
@@ -43,7 +43,7 @@
                    </div>
           </div>
         </div>
-        <div class="col-md-8 order-2 px-sm-3">
+        <div class="col-xs-12 col-md-8 order-2 px-sm-3">
           <div class="h-100 py-3">
             <nav>
                   <ol class = "link">
@@ -90,34 +90,34 @@
         </div>
       </div>
       <div class="row d-flex mx-sm-m3">
-        <div class="col-md-6 order-1 px-sm-3">
+        <div class="col-xs-12 col-md-6 order-1 px-sm-3">
           <div class="h-100 py-3">
             <div id="table_conteiner">
                 <table>
-              <tr>
+              <tr class="even">
                 <th>A</th>
                 <th>B</th>
                 <th>C</th>
               </tr>
-              <tr>
+              <tr class="odd">
                 <td>A1</td>
                 <td>B1</td>
                 <td>C1</td>
               </tr>
-              <tr>
+              <tr class="even">
                 <td colspan="3">A2+B2+C2</td>
               </tr>
-              <tr>
+              <tr class="odd">
                 <td>A3</td>
                 <td>B3</td>
                 <td>C3</td>
               </tr>
-              <tr>
+              <tr class="even">
                 <td>A4</td>
                 <td>B4</td>
                 <td>C4</td>
               </tr>
-              <tr>
+              <tr class="odd">
                 <td>A5</td>
                 <td>B5</td>
                 <td>C5</td>
@@ -126,79 +126,94 @@
               </div>
           </div>
         </div>
-        <div class="col-md-6 order-2 px-sm-3">
+        <div class="col-xs-12 col-md-6 order-2 px-sm-3">
           <div class="h-100 py-3">
             <div id="form">
-                <form action="\" method="POST">
-                  <label>
-                    Имя:<br />
-                    <input name="field-name-1"/>
-                  </label><br />
-
-                  <label>
-                    Email:<br />
-                    <input name="field-email" type="email" />
-                  </label><br />
-
-                  <label>
-                    Дата рождения:<br />
-                    <input name="field-date"
-                      type="date" />
-                  </label><br />
-
-                  <label>
-
-                  Пол:<br />
-                  <label><input type="radio" checked="checked"
-                    name="radio-group-1" value="Значение1" />
-                    Мужской</label>
-                  <label><input type="radio"
-                    name="radio-group-1" value="Значение2" />
-                    Женский</label><br />
-
-                    Количество конечностей:<br />
-                    <label><input type="radio"
-                      name="radio-group-2" value="Значение1" />
-                      0</label>
-                    <label><input type="radio"
-                      name="radio-group-2" value="Значение2" />
-                      0-4</label>
-                      <label><input type="radio"
-                        name="radio-group-2" value="Значение3" />
-                        4-10</label>
-                        <label><input type="radio"
-                          name="radio-group-2" value="Значение" />
-                          10+</label><br />
-
-                          <label>
-                            Суперспособности:
-                            <br />
-                            <select name="field-name-2"
-                              multiple="multiple">
-                              <option value="Значение1">Бессмертие</option>
-                              <option value="Значение2">Прохождение сквозь стены</option>
-                              <option value="Значение3">Левитация</option>
-                            </select>
-                          </label><br />
-
-                          <label>
-                            Биография:<br />
-                            <textarea name="field-name-2"></textarea>
-                          </label><br />
-
-                  С контрактом ознакомлен:<br />
-                  <label><input type="checkbox" checked="checked"
-                    name="check-1" />
-                    Да</label><br />
-
-                  <input type="submit" value="Отправить" /><br />
-                </form>
+              <div class="form-group">
+                   <label for="username" style="color: black;">Имя:</label>
+                   <input type="text" class="form-control w-75 shadow bg-white rounded" name="firstname" id="firstname" placeholder="Enter Username">
+                   <small class="form-text text-muted">Введите ваше имя</small>
+                   </div>
+                   <div class="form-group">
+                   <label for="email" style="color: black;">E-mail:</label>
+                   <input type="email" class="form-control w-75 shadow bg-white rounded" id="email" name="email" placeholder="Enter E-mail:" >
+                   <small class="form-text text-muted">Введите один из следующих email: mail.ru,.com,.yandex</small>
+                   </div>
+                   <div class="form-group">
+                   <label for="date" style="color: black;">Дата рождения:</label>
+                   <input type="date" class="form-control w-75 shadow bg-white rounded" name="date">
+                   </div>
+                   <fieldset class="form-group">
+                   <legend style="color: black;">Выберите пол:</legend>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="women" name="gender" value="women">
+                   женский</label>
+                   </div>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="men" name="gender" value="men">
+                   мужской</label>
+                   </div>
+                   </fieldset>
+                   <fieldset class="form-group">
+                   <legend style="color: black;">Выберите кол-во конечностей:</legend>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="one" name="body" value="one">
+                   1</label>
+                   </div>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="two" name="body" value="two">
+                   2</label>
+                   </div>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="three" name="body" value="three">
+                   3</label>
+                   </div>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="fore" name="body" value="four">
+                   4</label>
+                   </div>
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="radio" class="form-check-input" id="five" name="body" value="tive">
+                   5</label>
+                   </div>
+                   </fieldset>
+                   <div class="form-group w-75">
+                   <label for="multipleselect" style="color: black;">Выберите сверхспособности:</label>
+                   <select name="force"  multiple class="form-control shadow bg-white rounded" id="force">
+                   <option value="1"> бессмертие </option>
+                   <option value="2"> прохождение сквозь стены </option>
+                   <option value="3"> левитация </option>
+                    </select>
+                   </div>
+                   <div class="form-group w-75">
+                   <label for="textarea" style="color: black;">Биография: </label>
+                   <textarea rows="5" class="form-control shadow bg-white rounded">
+                   </textarea>
+                   </div>
+                   <fieldset class="form-group">
+                   <div class="form-check">
+                   <label class="form-check-label">
+                   <input type="checkbox" name="soglasie" class="form-check-input" style="color: black;">
+                   С контрактом ознакомлен(а)  </label>
+                   </div>
+                   </fieldset>
+                   <button type="submit" class="btn btn-success btn-md">Отправить</button>
+                   </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
       <div class="row d-flex mx-sm-m3">
-        <div class="col-md-12 order-6 px-sm-3">
+        <div class="col-xs-12 col-md-12 order-6 px-sm-3">
           <div class="h-100 py-3">
             <footer>
                   <div id="footer_text">

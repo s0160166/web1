@@ -35,10 +35,9 @@ nav{
 	background: #fff2e1;
   background-color:#ccc;
   border: 3px solid grey;
-  max-height: 100%;
+  width: 100%;
 }
 #table_conteiner{
-  background-color:#ccc;
   text-align: left;
   border-collapse: collapse;
   border: 3px solid grey;
@@ -66,7 +65,30 @@ footer{
 	background-color: #87FA9C;
   border:  3px solid black;
 }
+.even{
+  background-color:#ccc;
+}
+.odd{
+	  background-color: #87FA9C;
+}
 #footer_text{
    background-color:#ddd; padding:10px; text-align: center;
    border:  1px solid grey;
+}
+.form-group{
+	text-align: center;
+}
+.form-check{
+	border:  1px solid yellow;
+	text-align: left;
+}
+@media screen and (max-width: 768px) {
+	nav{
+	  padding: 10px;
+		column-count: 1;
+		background: #fff2e1;
+	  background-color:#ccc;
+	  border: 3px solid grey;
+	  width: 100%;
+	}
 }

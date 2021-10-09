@@ -1,8 +1,7 @@
 body{
 	margin: 0;
-	background: grey url(fon.jpg); /* Фоновый цвет и фоновый рисунок*/
-
-		background-size: cover
+	background-image: url(fon.jpg);
+  background-size: auto;
 }
 #header_box {
 	background: rgba(0, 66, 127, 0.5);

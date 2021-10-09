@@ -1,15 +1,19 @@
 body{
 	margin: 0;
+	background: #000 url(fon.jpg); /* Фоновый цвет и фоновый рисунок*/
+	 /*Цвет текста на странице*/
+		background-attachment: fixed; /* Фон страницы фиксируется */
+		background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
 }
 #header_box {
-	background-color: #87FA9C;
+	background: rgba(0, 66, 127, 0.5);
   border:  3px solid black;
   display: flex;
   flex-direction: row;
   flex-wrap:  wrap;
 }
 #siteName{
-   background-color:#ddd; padding:10px; text-align: center;
+   background: rgba(23, 41, 59, 0.5); padding:10px; text-align: center;
    flex: 80%;
    order:2;
    margin: 10px;
@@ -25,25 +29,52 @@ body{
 }
 #menu{
   padding: 10px;
-  background-color:#cca;
+  background: rgba(138, 118, 118, 0.6);
   text-align: left;
-  border: 3px solid grey;
   height: 100%;
 }
+.menuTable {
+	width: 100%;
+	display: table;
+}
+.menuTable ul {
+	display: table-row;
+}
+.menuTable li {
+	display: table-cell;
+	background: rgba(0, 94, 181, 0.5)
+}
+.menuTable ul li:hover, .menuTable a:hover {
+	background: #666;
+}
+.menuTable li a {
+	display: block;
+	padding: 8px 15px;
+	color: #fff;
+	text-align: center;
+}
 nav{
-  padding: 10px;
+  padding-left: -50px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
   column-width: 49%;
 	column-count: 2;
 	column-gap: 2%;
-	background: #fff2e1;
-  background-color:#ccc;
-  border: 3px solid grey;
+	background: rgba(23, 41, 59, 0.5);
   width: 100%;
+	color: white;
+}
+nav li{
+	list-style-type: none;
+	margin: 5px 0;
+}
+nav a{
+	color: yellow;
 }
 #table_conteiner{
   text-align: left;
   border-collapse: collapse;
-  border: 3px solid grey;
   height: 100%;
 }
 table{
@@ -53,45 +84,106 @@ table{
   border-collapse: collapse;
 }
 th, td {
-   border: 1px solid grey;
+   border: 3px solid grey;
 }
 #form{
   padding: 10px;
-  background-color:#ccc;
+  background: rgba(138, 118, 118, 0.6);
   text-align: center;
-  border: 3px solid grey;
 }
 footer{
   height: 100%;
 	padding:  10px;
 	text-align: center;
-	background-color: #87FA9C;
+	background: rgba(0, 66, 127, 0.5);
   border:  3px solid black;
 }
 .even{
-  background-color:#ccc;
+  background: rgba(138, 118, 118, 0.6);
 }
 .odd{
 	  background-color: #87FA9C;
 }
 #footer_text{
-   background-color:#ddd; padding:10px; text-align: center;
+   background: rgba(23, 41, 59, 0.5); padding:10px; text-align: center;
    border:  1px solid grey;
 }
 .form-group{
 	text-align: center;
 }
 .form-check{
-	border:  1px solid yellow;
 	text-align: left;
+}
+#button1{
+	width: 25%;
+	float:left;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#button2{
+	width: 25%;
+	float:right;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#calc{
+	margin:10px 0;
+}
+#result{
+	width:100%;
+	margin: 30px 0;
+	height: 30px;
+	border:  1px solid black;
+	background-color: white;
+	text-align: right;
+	padding-right: 10px;
+}
+#field1{
+	width: 48%;
+	text-align: right;
+	padding-right: 10px;
+}
+#field2{
+	width: 48%;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
 }
 @media screen and (max-width: 900px) {
 	nav{
-	  padding: 10px;
+		padding-left: -50px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	  column-width: 49%;
 		column-count: 1;
-		background: #fff2e1;
-	  background-color:#ccc;
-	  border: 3px solid grey;
+		column-gap: 2%;
+		background: rgba(23, 41, 59, 0.5);
 	  width: 100%;
+		color: white;
+	}
+	.menuTable {
+		display: flex;
+		flex-direction: row;
+		flex-wrap:  wrap;
+		margin: 0 auto;
+	}
+	.menuTable ul {
+	width:100%;
+	padding: 0;
+	min-height: 100%;
+  }
+	.menuTable li {
+		background: rgba(0, 94, 181, 0.5)
+		flex: 100%;
+		display: block;
+	}
+	.menuTable ul li:hover, .menuTable a:hover {
+		background: #666;
+	}
+	.menuTable li a {
+		color: #fff;
+		text-align: center;
+		width: 100%;
 	}
 }

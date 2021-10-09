@@ -13,10 +13,11 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calc.js" defer></script>
   </head>
 
 
-  <body>
+  <body >
     <div class="container-fluid">
       <div class="row d-flex mx-sm-m3">
         <div class="col-xs-12 col-md-12 order-1 px-sm-3">
@@ -25,7 +26,7 @@
                 <div id="header_box">
                   <img id="logo" src="image.png" alt="picture">
                   <div id="siteName">
-                    <h3>В эпоху до аватаров мы были магами не элементов, а энергии внутри нас самих</h3>
+                    <h3 style="color:white;">В эпоху до аватаров мы были магами не элементов, а энергии внутри нас самих</h3>
                   </div>
                 </div>
             </header>
@@ -33,15 +34,31 @@
         </div>
       </div>
       <div class="row d-flex mx-sm-m3">
+        <div class="col-xs-12 col-md-12 order-1 px-sm-3">
+          <div class="h-100 py-3">
+            <div class = "menuTable">
+              <ul>
+               <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
+               <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
+               <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex mx-sm-m3">
         <div class="col-xs-12 col-md-4 order-1 px-sm-3">
           <div class="h-100 py-3">
             <div id = "menu">
-                    <ul>
-                     <li><a href="#title">Ссылка на заголовок этой страницы</a></li>
-                     <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
-                     <li><a href="../../form.html">Относительная на страницу в каталоге двумя уровнями выше </a></li>
-                    </ul>
-                   </div>
+              <div id="result"></div>
+                    <form  id = "calc" >
+                       <input name="field1" type="text" id = "field1">
+                       <input name="field2" type="text" id = "field2">
+                       <button id="button1" onclick="return onClick1()"><h3>=</h3></button>
+                       <button id="button2" onclick="return onClick2()"><h3>C</h3></button>
+                    </form>
+            </div>
+
           </div>
         </div>
         <div class="col-xs-12 col-md-8 order-2 px-sm-3">
@@ -69,16 +86,17 @@
                   <li><p>
                     Внутри этого абзаца есть контекстная <a href="http://example.com/">ссылка</a>
                   </p></li>
-                  <li>Ссылка - изображение <br /><a href = "http://example.com/">
+                  <li>Ссылка - изображение <br /><br /><a href = "http://example.com/">
                     <img src="image.jpg" alt="Цветок" style="width: 100%;" />
                   </a></li>
                   <map name="primary">
-                  <area shape="circle" coords="150,100,50" href="http://example.com/">
+                  <area shape="circle" coords="150,150,30" href="http://example.com/">
                   <area shape="rect" coords="1,1,50,50" href="https://www.youtube.com/watch?v=CmJDxSbCscM">
                   </map>
                   <li>Левый верхний угол - квадрат, цетр цветка - круг<br />
                     <img usemap="#primary" src="image.jpg" alt="Цветок" style="width: 100%;" />
                   </li>
+                  <br />
                   <li><a href="demo.html">Относительная в этом каталоге</a></li>
                   <li><a href="../about/testfile.html">Относительная на страницу в каталоге about </a></li>
                   <li><a href="../about/testfile.html">Относительная на страницу в каталоге уровнем выше </a></li>
@@ -91,7 +109,7 @@
         </div>
       </div>
       <div class="row d-flex mx-sm-m3">
-        <div class="col-xs-12 col-md-6 order-1 px-sm-3">
+        <div class="col-xs-12 order-2 col-md-6 px-sm-3">
           <div class="h-100 py-3">
             <div id="table_conteiner">
                 <table>
@@ -127,18 +145,18 @@
               </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-6 order-2 px-sm-3">
+        <div class="col-xs-12 order-1 col-md-6 px-sm-3">
           <div class="h-100 py-3">
             <div id="form">
               <div class="form-group">
                    <label for="username" style="color: black;">Имя:</label>
                    <input type="text" class="form-control w-75 shadow bg-white rounded" name="firstname" id="firstname" placeholder="Enter Username">
-                   <small class="form-text text-muted" style="text-align:left;">Введите ваше имя</small>
+
                    </div>
                    <div class="form-group">
                    <label for="email" style="color: black;">E-mail:</label>
                    <input type="email" class="form-control w-75 shadow bg-white rounded" id="email" name="email" placeholder="Enter E-mail:" >
-                   <small class="form-text text-muted"  style="text-align:left;">Введите один из следующих email: mail.ru,.com,.yandex</small>
+
                    </div>
                    <div class="form-group">
                    <label for="date" style="color: black;">Дата рождения:</label>
@@ -206,24 +224,21 @@
                    </div>
                    </fieldset>
                    <button type="submit" class="btn btn-success btn-md">Отправить</button>
-                   </div>
                 </div>
-              </form>
+              </div>
             </div>
-          </div>
         </div>
-      </div>
       <div class="row d-flex mx-sm-m3">
-        <div class="col-xs-12 col-md-12 order-6 px-sm-3">
+        <div class="col-xs-12 col-md-12 order-1 px-sm-3">
           <div class="h-100 py-3">
             <footer>
                   <div id="footer_text">
-                    <h6>Это обычный футер</h6>
+                    <h6 style="color:white;" >Это обычный футер</h6>
                   </div>
             </footer>
           </div>
         </div>
       </div>
-    </div>
+  </div>
   </body>
 </html>

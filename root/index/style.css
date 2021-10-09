@@ -1,10 +1,10 @@
 body{
 	margin: 0;
-	background: #000 url(fon.jpg); /* Фоновый цвет и фоновый рисунок*/
+	background: grey url(fon.jpg); /* Фоновый цвет и фоновый рисунок*/
 	 /*Цвет текста на странице*/
 		background-attachment: fixed; /* Фон страницы фиксируется */
 		background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
-		background-repeat: repeat-y;
+		background-size: cover
 }
 #header_box {
 	background: rgba(0, 66, 127, 0.5);

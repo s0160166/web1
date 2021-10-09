@@ -1,9 +1,7 @@
 body{
 	margin: 0;
 	background: grey url(fon.jpg); /* Фоновый цвет и фоновый рисунок*/
-	 /*Цвет текста на странице*/
-		background-attachment: fixed; /* Фон страницы фиксируется */
-		background-repeat: repeat-x; /* Изображение повторяется по горизонтали */
+
 		background-size: cover
 }
 #header_box {
@@ -108,9 +106,6 @@ footer{
 #footer_text{
    background: rgba(23, 41, 59, 0.5); padding:10px; text-align: center;
    border:  1px solid grey;
-}
-.form-group{
-	text-align: center;
 }
 .form-check{
 	text-align: left;

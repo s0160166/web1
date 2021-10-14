@@ -6,7 +6,7 @@ function onClick1() {
   if(parseInt(f1[0].value) * parseInt(f2[0].value)>0){
   var result = parseInt(f1[0].value) * parseInt(f2[0].value);
   }else{
-  var result = None;
+  var result = "Error";
   }
   r.innerHTML = result;
   let с = document.getElementById("button1");

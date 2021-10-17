@@ -1,7 +1,6 @@
 
 function onClick1() {
   let f1 = document.getElementsByName("field1");
-<<<<<<< HEAD
  let f2 = document.getElementsByName("field2");
  let r = document.getElementById("result2");
  if(parseInt(f1[0].value) * parseInt(f2[0].value)>0){
@@ -12,18 +11,6 @@ function onClick1() {
  r.innerHTML = result;
  let с = document.getElementById("button1");
  return false;
-=======
-  let f2 = document.getElementsByName("field2");
-  let r = document.getElementById("result");
-  if(parseInt(f1[0].value) * parseInt(f2[0].value)>0){
-  var result = parseInt(f1[0].value) * parseInt(f2[0].value);
-  }else{
-  alert("Error");
-  }
-  r.innerHTML = result;
-  let с = document.getElementById("button1");
-  return false;
->>>>>>> 767fa94b92b947b817685698cd95b59779e5224f
 }
 function onClick2() {
   let f1 = document.getElementsByName("field1");

@@ -50,7 +50,41 @@
         <div class="col-xs-12 col-md-4 order-1 px-sm-3">
           <div class="h-100 py-3">
             <div id = "menu">
-              <div id="result"></div>
+              <div>
+              <div>
+                <h4>Выберите тип сайта</h4>
+              </div>
+              <div>
+                <select name="myselect">
+                  <option value="1">Сайт-визитка</option>
+                  <option value="2">Сайт для бизнеса</option>
+                  <option value="3">Интернет-магазин</option>
+                </select>
+              </div><br />
+              <div class="myradios" id="myradios">
+                <div>
+                  <label><input type="radio" name="myradio" value="r1">Малый бизнес</label>
+                </div>
+                <div>
+                  <label><input type="radio" name="myradio" value="r2">Филиал</label>
+                </div>
+                <div>
+                  <label><input type="radio" name="myradio" value="r3">Предприятие</label>
+                </div>
+              </div>
+              <label id = "check-1">
+                <input type="checkbox" name="check-1" value = "1"/>
+                Добавить мобильное приложение
+              </label>
+
+              <div id="result1"></div>
+              <div>
+                <h6 style="float:right; color: white;">Стоимость услуги</h4>
+              </div>
+              </div>
+              <br />
+              <hr style="border: 30px solid grey; margin: 0 -10px;">
+              <div id="result2"></div>
                     <form  id = "calc" >
                        <input name="field1" type="text" id = "field1">
                        <input name="field2" type="text" id = "field2">
@@ -58,6 +92,7 @@
                        <button id="button2" onclick="return onClick2()"><h3>C</h3></button>
                     </form>
             </div>
+
 
           </div>
         </div>

@@ -154,6 +154,12 @@ footer{
 	text-align: right;
 	padding-right: 10px;
 }
+#field0{
+	width: 48%;
+	text-align: right;
+	padding-right: 10px;
+	float:right;
+}
 @media screen and (max-width: 900px) {
 	nav{
 		padding-left: -50px;

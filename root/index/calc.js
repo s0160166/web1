@@ -38,6 +38,9 @@ window.addEventListener('DOMContentLoaded', function (event) {
        amount = parseInt(this.value);
     }else{
     alert("Error");
+    let rr = document.getElementById("result1");
+        var result = 0;
+        rr.innerHTML = result;
     }
     if (s[0].value == "1") {
       let r = document.getElementById("result1");

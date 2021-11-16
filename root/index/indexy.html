@@ -100,8 +100,55 @@
                     <br />
                     <hr style="border: 30px solid grey; margin: 60px -10px;">
 
-                </div>
+
+                    <div class="wrapper">
+                          <div style="text-align: center;" > <a role="button" href="#popup" class="header_phone popup-link btn btn-success" id = "for-popup-form">Popap</a></div>
+                          <div class="popup-overlay" id = "popup">
+                            <div class="popWindow popup-main-window">
+                            <div class="close-btn">&times;</div>
+
+                            <div class="row my-4">
+                            <h2 class="form-text">Отправка данных на почту</h2>
+                            </div>
+                            <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+                              <div class="form_item form-group">
+                                  <label for="formName" style="color: black;">Имя:</label>
+                                  <input type="text" class="form_input _req form-control w-75 shadow bg-white rounded" name = "popup-name" id="formName" placeholder="Enter Username" required>
+                                  <small class="form-text text-muted">Введите ваше имя</small>
+                                  </div>
+                                  <div class="form_item form-group">
+                                      <label for="formEmail" style="color: black;">E-mail:</label>
+                                      <input type="email" class="form_input _req _email form-control w-75 shadow bg-white rounded" id="formEmail" name = "popup-email" required placeholder="Enter E-mail:" >
+                                      <small class="form-text text-muted">Введите один из следующих email: mail.ru,.com,.yandex</small>
+                                      </div>
+                                      <div class="form_item form-group w-75">
+                                          <label for="formMessage" style="color: black;">Сообщение:</label>
+                                          <textarea id="formMessage" id="formMessage" name="popup-message" class="form_input _req form-control shadow bg-white rounded"  id="form">
+                                          </textarea>
+                                          <small class="form-text text-muted">Необязательное поле</small>
+                                          </div>
+                                          <div class="form-check">
+                                              <label id="soglasie " class="checkbox_label form-check-label">С контрактом ознакомлен(а)  </label>
+                                                <input for="soglasie" checked type="checkbox" name="popup-checkbox" class="checkbox_input form-check-input" style="color: black; margin-left:10px; margin-top:8px;">
+                                          </div>
+                            <label class = "col-12"><input type = "submit" name = "popup-submit" class = "popup-submit"></label>
+                            </form>
+                            </div>
+                            <br>
+                            <div class="popWindow thank-you-window">
+                            <div class="close-btn">&times;</div>
+                            <br><br>
+                            <p class = "thank-you-message">
+                            Ваше cообщение отправлено!
+                            </p>
+                            </div>
+                            </div>
+                          </div>
+
               </div>
+
+
+            </div>
 
 
         </div>
@@ -338,7 +385,8 @@
       </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="slick.min.js"></script>
   <script src="slick.js" defer></script>
 

@@ -274,3 +274,89 @@ background: url('images/arrow_right.png') 0 0 / 100% no-repeat;
  object-fit: cover;
  position: 50% 50%;
 }
+
+#for-popup-form{
+	background-color: rgba(0, 94, 181, 0.5);
+}
+#
+.form-text{
+    margin-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+}
+.popup-submit{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 rgb(39, 61, 42);
+    transition: background-color 0.5s ease 0s;
+    background-color: rgb(86, 202, 92);
+    margin-top: 10px;
+}
+.popup-overlay{
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(23, 41, 59, 0.5);
+	z-index: 100;
+	}
+	.popWindow{
+	display: none;
+	margin: auto;
+	max-width: 720px;
+	padding-bottom: 20px;
+	margin-top: 130px;
+	left:50%;
+	box-shadow: 0 0 30px rgba(23, 41, 59, 0.5);
+	background-color: #87FA9C;
+    border-radius: 5px;
+	}
+	.popWindow h2{
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	z-index: 10;
+	position: relative;
+	}
+	.close-btn{
+	float:right;
+	font-size: 30px;
+	line-height: 20px;
+	cursor: pointer;
+	color: rgb(34, 34, 34);
+	padding: 10px;
+	}
+	.thank-you-window{
+	display: none;
+	height: 100px;
+	width: 400px;
+    padding-bottom: 5px;
+    text-align: center;
+    align-items: center;
+    margin-top: 0px;
+	box-shadow: 0 0 30px rgba(18, 70, 25, 0.986);
+	background-color: rgb(140, 240, 47);
+	position:absolute;
+	}
+	.thank-you-message{
+	font-size: 25px;
+    color: #fff;
+	}
+	.btnf{
+        padding-left: 120px;
+    }
+    .form_button{
+        width: 70%;
+    }
+ }
